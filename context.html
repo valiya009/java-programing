@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" ondblclick="test('doublr click')">click</button>
+
+    <div id="box" ondblclick="test()">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut laborum eius fuga ipsa aliquam! Voluptates quaerat, hic illum aut neque repellendus qui iusto necessitatibus illo. Similique veritatis soluta dolorum ipsa, natus accusantium molestiae expedita nobis cum, obcaecati magnam velit qui praesentium, necessitatibus delectus ullam! Similique cum sequi facere placeat reprehenderit hic corrupti harum fugiat. Assumenda fugit nesciunt ullam, aliquam non a vel expedita iure hic tempore odit qui voluptatem? Voluptas cum earum, temporibus sed natus nostrum error ullam autem laudantium tempora molestiae quam sint a culpa veritatis voluptatem. Impedit placeat voluptates voluptatum pariatur repudiandae rem, est numquam magni unde quae?</div>
+
+    <script>
+
+        function test(data)
+        {
+            console.log("dblclick");
+            
+        }
+        let btn = document.getElementById('box');
+
+        btn.addEventListener('dblclick',(e)=>{
+            //e.preventDefault();
+            console.log('dbl click');
+            
+            
+        });
+    </script>
+</body>
+</html>

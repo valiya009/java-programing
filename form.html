@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="validate()">
+        <label for="">NAME :</label>
+        <input type="text" id="name"> <br><br>
+        <label for="">ROLL NUMBER</label>
+        <input type="text" id="rno"> <br><br>
+        <label for=""> CITY :</label>
+        <select name="city" id="city">
+            <option value="">SELECT :</option>
+            <option value="Bhavngar"> Bhavngar</option>
+            <option value="Junagadh"> Junagadh</option>
+            <option value="Somnath"> Somnath</option>
+            <option value="Gandhinagar"> Gandhinagar</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        let name = document.getElementById('name');
+        let rno = document.getElementById('rno')        ;
+        let city = document.getElementById('city');
+
+        function validate(event)
+        {
+            if(name.value=="")
+            {
+                alert("Enter a name");
+            }
+            else if(rno.value=="")
+            {
+                alert("Enter roll number")
+            }
+            else if(city.value=="")
+            {
+                alert("Select city")
+            }
+            else
+            {
+                 if(name.value.length<2)
+                {
+                    alert("Name is not valid");
+                }
+                else
+                {
+                    console.log(name.value);
+                console.log(rno.value);
+                console.log(city.value);
+                confirm("check");
+                }
+            }
+            
+            
+            
+            
+        }
+    </script>
+</body>
+</html>

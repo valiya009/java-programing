@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="even"></h1>
+
+    <input type="text" onchange="data()" id="ans">
+    <script>
+        function data()
+        {
+            let ans = document.getElementById("ans").value;
+
+             let even = document.getElementById("even");
+
+            even.innerHTML= ans;
+        
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="display()" >
+        <label for="">NAME :</label>
+        <input type="text" id="name"> <br><br>
+        <label for="">PASSWORD :</label>
+        <input type="text" id="pas"> <br><br>
+        <label for="gender"  id="gen"   >GENDER :</label>
+        <label for="Male" >Male</label>
+        <input type="radio" name="gender" checked>
+        <label for="FeMale">FeMale</label>
+        <input type="radio" name="gender">
+        <label for="Other">Other</label>
+        <input type="radio" name="gender"><br><br>  
+        <label for="EDUCATION">EDUCATION :</label>
+        <label for="10th"  id="edu">10th</label>
+        <input type="checkbox" >
+        <label for="11th">11th</label>
+        <input type="checkbox" >
+        <label for="12th">12th</label>
+        <input type="checkbox" >
+        <label for="Other">Other</label>
+        <input type="checkbox" ><br><br>
+        <label for="EMAIL" >EMAIL :</label>
+        <input type="text" id="mail"><br><br>
+        <label for="PHONE NUM :" >PHONE NUM :</label>
+        <select name="contry code" id="code">
+            <option value="">code</option>
+            <option value="+91">+91</option>
+            <option value="+90">+90</option>
+            <option value="+81">+81</option>
+            <option value="+99">+99</option>
+        </select>
+    <button>Regidter now</button>
+
+        <script>
+            let name = document.getElementById('name');
+            let pas = document.getElementById('pas');
+            let gen = document.getElementById('gen');
+            let edu = document.getElementById('edu');
+            let mail = document.getElementById('mail');
+            let code = document.getElementById('code');
+            let num = document.getElementById('num');
+            
+            function display(event)
+            {
+                console.log(code.value);
+                
+                if(name.value=="")
+                    {
+                        alert("ENTER YOUR NAME :")
+                    }
+                    
+                    else if(pas.value=="")
+                    {
+                        alert("ENTER YOUR password :")
+                    }
+                    else if(gen.value=="")
+                    {
+                        alert("SELECT YOUR  gender :")
+                    }
+                    else if(edu.value=="")
+                    {
+                        alert("SELECT YOUR  education :")
+                    }
+                    else if(mail.value=="")
+                    {
+                        alert("ENTER YOUR email :")
+                    }
+                    else if(code.value=="")
+                    {
+                        alert("SELECT CONTRY CODE :")
+                    }
+                    else if(num.value=="")
+                    {
+                        alert("ENTER YOUR pnumber:")
+                    }
+                    else
+                    {
+                        if(name.value.length<3)
+                    {
+                        alert("name is not valied")
+                    }
+                    else
+                    {
+                        console.log(name.value);
+                        console.log(pas.value);
+                        console.log(gen.value);
+                        console.log(edu.value);
+                        console.log(mail.value);
+                        console.log(code.value);
+                        console.log(num.value);
+                        confirm("check")
+                        
+                    }
+                    }
+
+            }
+        </script>
+
+
+    </form>
+</body>
+</html>
